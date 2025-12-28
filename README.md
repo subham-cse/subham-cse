@@ -1,27 +1,68 @@
+![Profile Views](https://komarev.com/ghpvc/?username=subham-cse) 
 <h1 align="center">Hi 👋, I'm Subham Mallick</h1>
 <h3 align="center">A Python Developer and Web Developer From India</h3>
 
-<p align="left"> <img src="https://komarev.com/ghpvc/?username=subham-cse&label=Profile%20views&color=0e75b6&style=flat" alt="subham-cse" /> </p>
 
-<p align="left"> <a href="https://github.com/ryo-ma/github-profile-trophy"><img src="https://github-profile-trophy.vercel.app/?username=subham-cse" alt="subham-cse" /></a> </p>
+🎓 **Computer Science & Engineering Student** at **Lovely Professional University (LPU), Punjab, India**  
+🌱 Learning & building projects daily | Python | Web Development | DBMS | Networks  
+💚 Passionate about sharing knowledge, building learning tools, and consistent growth  
 
-- 🔭 I’m currently working on **Python Master Module**
+---
 
-- 🌱 I’m currently learning **AI Machine Learning**
+## 🛠 Skills
 
-- 💬 Ask me about **Python, HTML, Javascript, Networks, DBMS**
+- **Programming Languages:** Python,JavaScript, HTML, CSS, SQL, DBMS
+- **Tools & Software:** AutoCAD, Git, VS Code, Jupyter Notebook  
+---
+## 🚀 Projects
 
-- 📫 How to reach me **rsatool125@gmail.com**
+### 🔹 Learn-English-in-100-Days
+- Structured daily lessons for vocabulary, grammar, idioms, comprehension, and writing practice  
+- Includes `.md` notes + interactive `.html` quizzes  
+- Perfect for learners to follow a **100-day English learning challenge**  
 
-- 📄 Know about my experiences [https://drive.google.com/file/d/1xLwKxOb0CqJ84Pdn8wLnajh5_RS3rQ4u/view](https://drive.google.com/file/d/1xLwKxOb0CqJ84Pdn8wLnajh5_RS3rQ4u/view)
+### 🔹 Python Mastery Module
+- Complete structured Python course for students  
+- Covers basics to advanced topics with examples, exercises, and mini-projects  
 
-<h3 align="left">Connect with me:</h3>
-<p align="left">
+---
+
+## 📌 Education
+
+**Bachelor of Technology (B.Tech)** in **Computer Science & Engineering**  
+**Lovely Professional University (LPU), Punjab, India**  
+
+---
+
+## 💡 What I’m Working On
+
+- Enhancing the **Learn-English-in-100-Days** repo with interactive quizzes  
+- Building Complete **Python Learning Module** using Python
+- Daily commits to GitHub to maintain **active learning streak**  
+
+---
+
+## 📈 GitHub Stats
+
+- 🟢 **Active daily contributor**  
+- 🌟 Focused on **learning & teaching projects**  
+- 📌 Consistent commits and documentation for portfolio growth  
+
+---
+
+## 📫 Connect With Me
+
+- LinkedIn: [Subham Mallick](https://www.linkedin.com/in/subham-mallick-7b7217380)  
+- GitHub: [subham-cse](https://github.com/subham-cse)  
+
+
+ <p align="center">
+  <img src="https://github-readme-streak-stats.herokuapp.com/?user=subham-cse&theme=default" alt="GitHub Streak" />
 </p>
 
-<h3 align="left">Languages and Tools:</h3>
-<p align="left"> <a href="https://www.w3schools.com/css/" target="_blank" rel="noreferrer"> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/css3/css3-original-wordmark.svg" alt="css3" width="40" height="40"/> </a> <a href="https://git-scm.com/" target="_blank" rel="noreferrer"> <img src="https://www.vectorlogo.zone/logos/git-scm/git-scm-icon.svg" alt="git" width="40" height="40"/> </a> <a href="https://www.w3.org/html/" target="_blank" rel="noreferrer"> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/html5/html5-original-wordmark.svg" alt="html5" width="40" height="40"/> </a> <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript" target="_blank" rel="noreferrer"> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/javascript/javascript-original.svg" alt="javascript" width="40" height="40"/> </a> <a href="https://www.mysql.com/" target="_blank" rel="noreferrer"> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/mysql/mysql-original-wordmark.svg" alt="mysql" width="40" height="40"/> </a> <a href="https://www.oracle.com/" target="_blank" rel="noreferrer"> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/oracle/oracle-original.svg" alt="oracle" width="40" height="40"/> </a> <a href="https://pandas.pydata.org/" target="_blank" rel="noreferrer"> <img src="https://raw.githubusercontent.com/devicons/devicon/2ae2a900d2f041da66e950e4d48052658d850630/icons/pandas/pandas-original.svg" alt="pandas" width="40" height="40"/> </a> <a href="https://www.postgresql.org" target="_blank" rel="noreferrer"> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/postgresql/postgresql-original-wordmark.svg" alt="postgresql" width="40" height="40"/> </a> <a href="https://www.python.org" target="_blank" rel="noreferrer"> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/python/python-original.svg" alt="python" width="40" height="40"/> </a> </p>
 
-<p><img align="left" src="https://github-readme-stats.vercel.app/api/top-langs?username=subham-cse&show_icons=true&locale=en&layout=compact" alt="subham-cse" /></p>
+
+> “Consistency + Learning + Sharing = Growth”  
+
 
 
