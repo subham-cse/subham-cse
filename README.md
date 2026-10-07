@@ -26,11 +26,6 @@
     </a>
   </p>
 
-  <!-- 3D Animated Isometric Tech Core Card -->
-  <a href="https://subham-mallick-portfolio.netlify.app/">
-    <img src="./assets/3d-tech-cube.svg" width="100%" alt="3D Isometric Core System" />
-  </a>
-
 </div>
 
 ---
