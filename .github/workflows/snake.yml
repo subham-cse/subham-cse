@@ -1,39 +1,26 @@
-name: Generate Contribution Snake Animation
+name: Generate Snake Animation
 
 on:
   schedule:
-    - cron: "0 0 * * *" # Run daily at midnight UTC
+    - cron: "0 0 * * *"
   workflow_dispatch:
-  push:
-    branches:
-      - main
-      - master
 
 permissions:
   contents: write
 
 jobs:
-  generate:
-    name: Generate Cyber Arcade Contribution Snake
+  build:
     runs-on: ubuntu-latest
-    timeout-minutes: 5
-
     steps:
-      - name: Checkout Repository
-        uses: actions/checkout@v4
-
-      - name: Generate Snake Animation SVGs
-        uses: Platane/snk@v3
+      - uses: actions/checkout@v4
+      - uses: Platane/snk@v3
         with:
           github_user_name: subham-cse
           outputs: |
-            dist/github-snake.svg?color_snake=#00F2FE&color_dots=#161b22,#0e4429,#006d32,#26a641,#39d353
-            dist/github-snake-dark.svg?palette=github-dark&color_snake=#FF007F&color_dots=#1a1b27,#164e63,#0284c7,#38bdf8,#a855f7
-        env:
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-
-      - name: Push SVGs to output Branch
-        uses: crazy-max/ghaction-github-pages@v4
+            dist/github-snake.svg
+            dist/github-snake-dark.svg?palette=github-dark
+      - name: Deploy Snake SVG
+        uses: crazy-max/ghaction-github-pages@v3.1.0
         with:
           target_branch: output
           build_dir: dist
