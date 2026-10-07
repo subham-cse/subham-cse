@@ -1,0 +1,260 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 850 320" width="100%" height="100%">
+  <defs>
+    <!-- Background Gradient -->
+    <radialGradient id="cyber-glow" cx="50%" cy="50%" r="60%">
+      <stop offset="0%" stop-color="#7F00FF" stop-opacity="0.25" />
+      <stop offset="50%" stop-color="#00F2FE" stop-opacity="0.08" />
+      <stop offset="100%" stop-color="#0a0e1a" stop-opacity="0" />
+    </radialGradient>
+
+    <!-- Isometric Face Gradients -->
+    <linearGradient id="cube-top" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#00F2FE" stop-opacity="0.9" />
+      <stop offset="100%" stop-color="#4FACFE" stop-opacity="0.7" />
+    </linearGradient>
+
+    <linearGradient id="cube-left" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#1e1b4b" stop-opacity="0.95" />
+      <stop offset="100%" stop-color="#0f172a" stop-opacity="0.95" />
+    </linearGradient>
+
+    <linearGradient id="cube-right" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#7F00FF" stop-opacity="0.75" />
+      <stop offset="100%" stop-color="#1e1b4b" stop-opacity="0.9" />
+    </linearGradient>
+
+    <linearGradient id="neon-cyan" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#00F2FE" />
+      <stop offset="100%" stop-color="#4FACFE" />
+    </linearGradient>
+
+    <linearGradient id="neon-magenta" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#FF007F" />
+      <stop offset="100%" stop-color="#7F00FF" />
+    </linearGradient>
+
+    <linearGradient id="grid-grad" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#00F2FE" stop-opacity="0.2" />
+      <stop offset="100%" stop-color="#00F2FE" stop-opacity="0" />
+    </linearGradient>
+
+    <!-- Filters -->
+    <filter id="neon-glow-cyan" x="-30%" y="-30%" width="160%" height="160%">
+      <feGaussianBlur stdDeviation="6" result="blur" />
+      <feMerge>
+        <feMergeNode in="blur" />
+        <feMergeNode in="SourceGraphic" />
+      </feMerge>
+    </filter>
+
+    <filter id="neon-glow-magenta" x="-30%" y="-30%" width="160%" height="160%">
+      <feGaussianBlur stdDeviation="7" result="blur" />
+      <feMerge>
+        <feMergeNode in="blur" />
+        <feMergeNode in="SourceGraphic" />
+      </feMerge>
+    </filter>
+
+    <filter id="badge-shadow" x="-40%" y="-40%" width="180%" height="180%">
+      <feDropShadow dx="0" dy="8" stdDeviation="6" flood-color="#000000" flood-opacity="0.7" />
+      <feDropShadow dx="0" dy="0" stdDeviation="4" flood-color="#00F2FE" flood-opacity="0.4" />
+    </filter>
+  </defs>
+
+  <style>
+    @keyframes float-cube {
+      0%, 100% { transform: translateY(0px) rotate(0deg); }
+      50% { transform: translateY(-14px) rotate(1deg); }
+    }
+
+    @keyframes pulse-ring {
+      0%, 100% { transform: scale(1) rotate(0deg); opacity: 0.6; }
+      50% { transform: scale(1.08) rotate(180deg); opacity: 0.95; }
+    }
+
+    @keyframes orbit-cw {
+      0% { transform: rotate(0deg) translateX(140px) rotate(0deg); }
+      100% { transform: rotate(360deg) translateX(140px) rotate(-360deg); }
+    }
+
+    @keyframes badge-float-1 {
+      0%, 100% { transform: translate(0, 0); }
+      50% { transform: translate(-6px, -10px); }
+    }
+
+    @keyframes badge-float-2 {
+      0%, 100% { transform: translate(0, 0); }
+      50% { transform: translate(8px, -12px); }
+    }
+
+    @keyframes badge-float-3 {
+      0%, 100% { transform: translate(0, 0); }
+      50% { transform: translate(-8px, 8px); }
+    }
+
+    @keyframes badge-float-4 {
+      0%, 100% { transform: translate(0, 0); }
+      50% { transform: translate(6px, 10px); }
+    }
+
+    @keyframes badge-float-5 {
+      0%, 100% { transform: translate(0, 0); }
+      50% { transform: translate(0px, -14px); }
+    }
+
+    @keyframes scanline {
+      0% { transform: translateY(-100px); opacity: 0; }
+      50% { opacity: 0.6; }
+      100% { transform: translateY(320px); opacity: 0; }
+    }
+
+    .main-cube-group {
+      transform-origin: 425px 150px;
+      animation: float-cube 5s ease-in-out infinite;
+    }
+
+    .orbital-ring {
+      transform-origin: 425px 155px;
+      animation: pulse-ring 8s ease-in-out infinite;
+    }
+
+    .badge-c { animation: badge-float-1 4s ease-in-out infinite; }
+    .badge-py { animation: badge-float-2 4.5s ease-in-out infinite 0.5s; }
+    .badge-linux { animation: badge-float-3 5s ease-in-out infinite 1s; }
+    .badge-aws { animation: badge-float-4 4.2s ease-in-out infinite 1.5s; }
+    .badge-git { animation: badge-float-5 4.8s ease-in-out infinite 0.8s; }
+
+    .hud-text {
+      font-family: 'SF Pro Display', -apple-system, 'Segoe UI', Roboto, Helvetica, sans-serif;
+      font-weight: 700;
+      letter-spacing: 1.5px;
+    }
+  </style>
+
+  <!-- Ambient Backdrop -->
+  <rect width="850" height="320" rx="16" fill="#030712" />
+  <circle cx="425" cy="155" r="240" fill="url(#cyber-glow)" />
+
+  <!-- Isometric Base Grid Floor -->
+  <g opacity="0.3" stroke="url(#grid-grad)" stroke-width="1">
+    <line x1="125" y1="260" x2="425" y2="130" />
+    <line x1="225" y1="290" x2="525" y2="160" />
+    <line x1="325" y1="310" x2="625" y2="180" />
+    <line x1="425" y1="320" x2="725" y2="190" />
+
+    <line x1="725" y1="260" x2="425" y2="130" />
+    <line x1="625" y1="290" x2="325" y2="160" />
+    <line x1="525" y1="310" x2="225" y2="180" />
+    <line x1="425" y1="320" x2="125" y2="190" />
+  </g>
+
+  <!-- Holographic Orbital Ring -->
+  <g class="orbital-ring">
+    <ellipse cx="425" cy="155" rx="180" ry="70" fill="none" stroke="url(#neon-cyan)" stroke-width="1.5" stroke-dasharray="8 6" filter="url(#neon-glow-cyan)" />
+    <ellipse cx="425" cy="155" rx="200" ry="78" fill="none" stroke="url(#neon-magenta)" stroke-width="1" stroke-dasharray="4 12" filter="url(#neon-glow-magenta)" />
+  </g>
+
+  <!-- Floating Isometric 3D Cube Cluster -->
+  <g class="main-cube-group">
+    <!-- Projected Ground Shadow -->
+    <ellipse cx="425" cy="255" rx="90" ry="32" fill="#000000" opacity="0.6" filter="blur(8px)" />
+
+    <!-- 3D CUBE -->
+    <!-- Left Face -->
+    <polygon points="425,150 345,105 345,195 425,240" fill="url(#cube-left)" stroke="#00F2FE" stroke-width="1.5" stroke-linejoin="round" />
+    <!-- Right Face -->
+    <polygon points="425,150 505,105 505,195 425,240" fill="url(#cube-right)" stroke="#FF007F" stroke-width="1.5" stroke-linejoin="round" />
+    <!-- Top Face -->
+    <polygon points="425,150 505,105 425,60 345,105" fill="url(#cube-top)" stroke="#00F2FE" stroke-width="2" stroke-linejoin="round" filter="url(#neon-glow-cyan)" />
+
+    <!-- Inner Neon Wireframe Highlights -->
+    <line x1="425" y1="150" x2="425" y2="240" stroke="#FFFFFF" stroke-width="1.8" opacity="0.8" />
+    <line x1="345" y1="105" x2="425" y2="150" stroke="#00F2FE" stroke-width="1.5" opacity="0.9" />
+    <line x1="505" y1="105" x2="425" y2="150" stroke="#FF007F" stroke-width="1.5" opacity="0.9" />
+
+    <!-- Central Core Energy Sphere -->
+    <circle cx="425" cy="150" r="14" fill="#00F2FE" filter="url(#neon-glow-cyan)" />
+    <circle cx="425" cy="150" r="7" fill="#FFFFFF" />
+
+    <!-- Face Inscriptions / Circuit Decals -->
+    <g opacity="0.4" stroke="#00F2FE" stroke-width="1">
+      <path d="M365,130 L385,142 L385,175" fill="none" />
+      <circle cx="365" cy="130" r="2" fill="#00F2FE" />
+      <path d="M485,130 L465,142 L465,175" fill="none" stroke="#FF007F" />
+      <circle cx="485" cy="130" r="2" fill="#FF007F" />
+    </g>
+  </g>
+
+  <!-- Left HUD Telemetry -->
+  <g transform="translate(45, 60)">
+    <rect x="0" y="0" width="190" height="190" rx="12" fill="#0b1120" stroke="#1e293b" stroke-width="1.5" opacity="0.9" />
+    <rect x="0" y="0" width="190" height="4" rx="2" fill="url(#neon-cyan)" />
+    <text x="18" y="32" fill="#38BDF8" font-size="11" class="hud-text">CORE ARCHITECTURE</text>
+    <text x="18" y="58" fill="#F8FAFC" font-size="14" font-family="'Fira Code', monospace" font-weight="700">&gt; LOW_LEVEL_SYS</text>
+    <text x="18" y="80" fill="#94A3B8" font-size="12" font-family="'Fira Code', monospace">• POSIX &amp; Memory</text>
+    <text x="18" y="100" fill="#94A3B8" font-size="12" font-family="'Fira Code', monospace">• Async I/O Pipelines</text>
+    <text x="18" y="120" fill="#94A3B8" font-size="12" font-family="'Fira Code', monospace">• Cloud Infrastructure</text>
+    
+    <!-- Status Indicator -->
+    <g transform="translate(18, 148)">
+      <rect x="0" y="0" width="154" height="24" rx="6" fill="#0f172a" stroke="#00F2FE" stroke-width="0.8" />
+      <circle cx="12" cy="12" r="4" fill="#34D399" filter="url(#neon-glow-cyan)" />
+      <text x="24" y="16" fill="#34D399" font-size="10" font-family="'Fira Code', monospace" font-weight="600">SYSTEM: ACTIVE</text>
+    </g>
+  </g>
+
+  <!-- Right HUD Telemetry -->
+  <g transform="translate(615, 60)">
+    <rect x="0" y="0" width="190" height="190" rx="12" fill="#0b1120" stroke="#1e293b" stroke-width="1.5" opacity="0.9" />
+    <rect x="0" y="0" width="190" height="4" rx="2" fill="url(#neon-magenta)" />
+    <text x="18" y="32" fill="#EC4899" font-size="11" class="hud-text">METRIC STREAM</text>
+    <text x="18" y="58" fill="#F8FAFC" font-size="14" font-family="'Fira Code', monospace" font-weight="700">&gt; TELEMETRY_GRID</text>
+    
+    <!-- Mini Metric Bars -->
+    <text x="18" y="82" fill="#94A3B8" font-size="10" font-family="'Fira Code', monospace">C++ / C Engine</text>
+    <rect x="18" y="88" width="154" height="5" rx="2.5" fill="#1e293b" />
+    <rect x="18" y="88" width="140" height="5" rx="2.5" fill="url(#neon-cyan)" />
+
+    <text x="18" y="108" fill="#94A3B8" font-size="10" font-family="'Fira Code', monospace">Python / AI Scorer</text>
+    <rect x="18" y="114" width="154" height="5" rx="2.5" fill="#1e293b" />
+    <rect x="18" y="114" width="132" height="5" rx="2.5" fill="url(#neon-magenta)" />
+
+    <text x="18" y="134" fill="#94A3B8" font-size="10" font-family="'Fira Code', monospace">Linux &amp; Cloud Ops</text>
+    <rect x="18" y="140" width="154" height="5" rx="2.5" fill="#1e293b" />
+    <rect x="18" y="140" width="145" height="5" rx="2.5" fill="#38BDF8" />
+
+    <text x="18" y="165" fill="#A855F7" font-size="10" font-family="'Fira Code', monospace" font-weight="600">STATUS: OPTIMAL 99.9%</text>
+  </g>
+
+  <!-- 3D FLOATING TECH BADGES -->
+  <!-- 1. C++ Badge (Top Left) -->
+  <g class="badge-c" transform="translate(265, 55)" filter="url(#badge-shadow)">
+    <rect x="0" y="0" width="62" height="34" rx="8" fill="#0f172a" stroke="#00F2FE" stroke-width="1.5" />
+    <text x="31" y="22" fill="#38BDF8" font-size="13" font-family="'Fira Code', monospace" font-weight="800" text-anchor="middle">C++</text>
+  </g>
+
+  <!-- 2. Python Badge (Top Right) -->
+  <g class="badge-py" transform="translate(520, 50)" filter="url(#badge-shadow)">
+    <rect x="0" y="0" width="76" height="34" rx="8" fill="#0f172a" stroke="#FF007F" stroke-width="1.5" />
+    <text x="38" y="22" fill="#F472B6" font-size="12" font-family="'Fira Code', monospace" font-weight="800" text-anchor="middle">PYTHON</text>
+  </g>
+
+  <!-- 3. Linux Badge (Bottom Left) -->
+  <g class="badge-linux" transform="translate(255, 205)" filter="url(#badge-shadow)">
+    <rect x="0" y="0" width="72" height="34" rx="8" fill="#0f172a" stroke="#FBBF24" stroke-width="1.5" />
+    <text x="36" y="22" fill="#FCD34D" font-size="12" font-family="'Fira Code', monospace" font-weight="800" text-anchor="middle">LINUX</text>
+  </g>
+
+  <!-- 4. AWS Badge (Bottom Right) -->
+  <g class="badge-aws" transform="translate(525, 210)" filter="url(#badge-shadow)">
+    <rect x="0" y="0" width="62" height="34" rx="8" fill="#0f172a" stroke="#FB923C" stroke-width="1.5" />
+    <text x="31" y="22" fill="#FDBA74" font-size="12" font-family="'Fira Code', monospace" font-weight="800" text-anchor="middle">AWS</text>
+  </g>
+
+  <!-- 5. Git Badge (Center Top Orbit) -->
+  <g class="badge-git" transform="translate(390, 15)" filter="url(#badge-shadow)">
+    <rect x="0" y="0" width="70" height="30" rx="8" fill="#0f172a" stroke="#818CF8" stroke-width="1.5" />
+    <text x="35" y="20" fill="#A5B4FC" font-size="11" font-family="'Fira Code', monospace" font-weight="800" text-anchor="middle">GIT/OPS</text>
+  </g>
+
+</svg>
