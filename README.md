@@ -55,7 +55,9 @@
 ### 🏆 3D Profile Achievements & Honors
 
 <div align="center">
-  <img src="https://github-profile-trophy.vercel.app/?username=subham-cse&theme=tokyonight&no-frame=false&no-bg=false&margin_w=10&margin_h=10&row=1&column=7" alt="3D GitHub Trophies" width="100%" />
+  <a href="https://github.com/ryo-ma/github-profile-trophy">
+    <img src="https://github-trophies.devomb.com/?username=subham-cse&theme=tokyonight&margin_w=10&margin_h=10&row=1&column=7" alt="3D GitHub Trophies" width="100%" />
+  </a>
 </div>
 
 ---
