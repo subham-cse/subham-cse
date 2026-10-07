@@ -38,14 +38,14 @@
   </a>
 </div>
 
-<details>
+<details open>
   <summary>🕹️ <b>Contribution Grid Arcade Snake</b></summary>
   <br/>
   <div align="center">
     <picture>
       <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/subham-cse/subham-cse/output/github-snake-dark.svg">
       <source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/subham-cse/subham-cse/output/github-snake.svg">
-      <img alt="GitHub Contribution Snake Animation" src="https://raw.githubusercontent.com/subham-cse/subham-cse/output/github-snake.svg" width="100%">
+      <img alt="Contribution Grid Arcade Snake" src="https://raw.githubusercontent.com/subham-cse/subham-cse/output/github-snake.svg" width="100%">
     </picture>
   </div>
 </details>
